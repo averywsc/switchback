@@ -32,52 +32,60 @@ Baby, Easy, Medium, Hard, Expert and Impossible. Harder levels have more notes, 
 
 ## Songs
 
-- Built-in songs: three tracks that ship inside the file.
+- By genre: Hip hop, R&B, Anime, 90s pop, 2000s, 80s, Pop, Rock, EDM, K-pop, Latin, Country and Indie, with up to 16 songs each. The game checks every song in the background and hides any that are removed, blocked or the wrong video, so only songs that play are listed.
+- Random song: picks a checked song from all genres.
 - Upload from your device: mp3, wav, ogg and other audio or video files.
 - Link: paste a YouTube link or a direct link to an audio file.
-- Random song: picks one of 50 popular YouTube music videos.
+
+The song you load shows in a Now loaded card on the main menu with its title, tempo and length. The last song you played has its own Play again button at the bottom of the menu.
+
+Play length is set to the whole song by default. Notes start after the first 3 seconds of the song.
 
 ### YouTube songs
 
-The game cannot hear YouTube audio, so it builds the notes from a beat grid instead of the music. It needs the tempo and where the first beat lands. You can tap along to set them, or let Random song find them for you.
+The game cannot hear YouTube audio, so it builds the notes from a beat grid instead of the music. It needs the tempo and where the first beat lands. You can tap along to set them, or use Random song, which fills in a stored tempo.
 
-### Random song
+### Random song and genres
 
-Press Random song and the game picks a video, checks that it can be played, sets the tempo and returns you to the start menu with the song ready.
+Press Random song, or pick a song from a genre. The game loads the video quietly, sets the tempo and returns you to the start menu with the song ready. Press Start to play. Nothing plays until you press Start.
 
-For accurate timing, press Match video colours first and tick Share tab audio. The game then plays about 10 seconds of the song, listens to it and measures the tempo and beat position. Without shared audio it falls back to a stored tempo and assumes the beat starts at the beginning of the video, which can be off.
-
-This part needs desktop Chrome or Edge.
+The tempo comes from a stored list and the game assumes the beat starts at the beginning of the video. If a song feels off, paste its link yourself and tap the beat.
 
 ## Colours
 
-- Colours come from the song cover art by default.
-- Two sliders on the main menu set the primary and secondary colours by hand.
-- Match video colours samples the playing video and recolours the game. Share this tab when the browser asks. It samples once at the start of each song.
+- For a YouTube song the game picks the main colours of the video (not just one tint) and spreads them across every mode. The colours keep shifting while a mode plays, following the video and changing every few beats.
+- For other songs the colours come from the cover art.
+- Two sliders on the main menu set the primary and secondary colours by hand. Setting them stops the automatic colours.
 - Pick colour (on the pause screen) lets you click any spot on screen to use its colour. Desktop Chrome and Edge only.
+
+## Results
+
+At the end of a song you get your score, rank and accuracy, plus a Better than percentage of players with a graph of where you sit. The crowd is simulated and scaled to the difficulty you played, so it is for fun and not real player data.
 
 ## Options
 
 - Volume slider for the song and all sound effects.
 - Sync offset (in milliseconds) to fix timing if the notes feel early or late.
-- Hit sounds: Chime, Pluck, Bell, Drum, Click or Off.
+- Hit sounds: 19 voices (Chime, Pluck, Bell, Drum, Click, Marimba, Piano, Harp, Glass, Synth, Laser, Coin, Pop, Wood block, Kick, Snare, Clap, Hi-hat and Bubble) or Off.
+- Echo on the hit sound: Off (default), Short, With the beat or Long.
+- Click volume, and a master volume for everything.
 - Key rebinding for every mode.
 
 ## Browser support
 
 | Feature | Chrome and Edge (desktop) | Other browsers |
 | --- | --- | --- |
-| Game and built-in songs | Yes | Yes |
+| Game | Yes | Yes |
 | Upload and links | Yes | Yes |
 | YouTube songs | Yes | Yes |
-| Match video colours and beat listening | Yes | No |
 | Pick colour | Yes | No |
 
 ## Known limits
 
-- YouTube timing depends on the tempo and beat position being right. Tap along or use the audio sharing option if a song feels off.
-- Random song uses a fixed list of 50 videos. A video that has been removed or blocked is skipped automatically.
-- The tempo values stored for the list were not all checked against a source. Beat listening replaces them when audio is shared.
+- YouTube timing depends on the tempo and beat position being right. Tap along if a song feels off.
+- The song lists are fixed. A video that has been removed or blocked is hidden automatically once the game has checked it.
+- The stored tempo values were not all checked against a source.
+- Video colours come from YouTube preview images, so they follow the video in a few steps rather than frame by frame.
 
 ## Files
 
